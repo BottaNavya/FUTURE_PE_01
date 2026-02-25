@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - BrewNest Cafe Vijayawada</title>
+    <meta name="description" content="BrewNest Cafe Menu - Specialty coffee, cold beverages, quick bites, and student combos in Vijayawada.">
+    <meta name="keywords" content="cafe menu, coffee, specialty drinks, quick bites, student combo">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+        .badge-popular {
+            background: #ef4444;
+        }
+        .badge-new {
+            background: #3b82f6;
+        }
+        .badge-favorite {
+            background: #10b981;
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <a href="index.html" class="text-2xl font-bold text-amber-900">
+                    ☕ BrewNest
+                </a>
+                <div class="hidden md:flex gap-8">
+                    <a href="index.html" class="text-gray-700 hover:text-amber-900 font-500 transition">Home</a>
+                    <a href="menu.html" class="text-gray-700 hover:text-amber-900 font-500 transition border-b-2 border-amber-900">Menu</a>
+                    <a href="about.html" class="text-gray-700 hover:text-amber-900 font-500 transition">About</a>
+                    <a href="gallery.html" class="text-gray-700 hover:text-amber-900 font-500 transition">Gallery</a>
+                    <a href="testimonials.html" class="text-gray-700 hover:text-amber-900 font-500 transition">Reviews</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-amber-900 font-500 transition">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="p-2 text-amber-900">☰</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="py-16 bg-gradient-to-r from-amber-900 to-amber-800 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Our Menu</h1>
+            <p class="text-xl text-amber-50">
+                Handcrafted drinks and bites. Made to fuel your day and fuel you for staying.
+            </p>
+        </div>
+    </section>
+
+    <!-- Menu Content -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Signature Coffees -->
+            <div class="mb-20">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12 pb-4 border-b-4 border-amber-900">
+                    ☕ Signature Coffees
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="card-hover bg-gradient-to-br from-amber-50 to-white p-6 rounded-xl border border-amber-200">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold text-gray-900">Classic Espresso</h3>
+                            <span class="badge-popular text-white text-xs font-bold px-3 py-1 rounded">Popular</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Pure, bold, exactly what coffee should taste like.</p>
+                        <p class="text-2xl font-bold text-amber-900">₹120</p>
+                    </div>
+
+                    <div class="card-hover bg-gradient-to-br from-amber-50 to-white p-6 rounded-xl border border-amber-200">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Cappuccino</h3>
+                        <p class="text-gray-600 mb-4">Smooth espresso with velvety steamed milk and microfoam.</p>
+                        <p class="text-2xl font-bold text-amber-900">₹180</p>
+                    </div>
+
+                    <div class="card-hover bg-gradient-to-br from-amber-50 to-white p-6 rounded-xl border border-amber-200">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Flat White</h3>
+                        <p class="text-gray-600 mb-4">Dense, creamy, coffee-forward. The Aussie way.</p>
+                        <p class="text-2xl font-bold text-amber-900">₹190</p>
+                    </div>
+
+                    <div class="card-hover bg-gradient-to-br from-amber-50 to-white p-6 rounded-xl border border-amber-200">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Americano</h3>
+                        <p class="text-gray-600 mb-4">Espresso shots with hot water. Clean. Simple. Powerful.</p>
+                        <p class="text-2xl font-bold text-amber-900">₹140</p>
+                    </div>
+
+                    <div class="card-hover bg-gradient-to-br from-amber-50 to-white p-6 rounded-xl border border-amber-200">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold text-gray-900">Latte</h3>
+                            <span class="badge-favorite text-white text-xs font-bold px-3 py-1 rounded">Favorite</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Creamy, comforting, perfect for those just getting into coffee.</p>
+                        <p class="text-2xl font-bold text-amber-900">₹170</p>
+                    </div>
+
+                    <div class="card-hover bg-gradient-to-br from-amber-50 to-white p-6 rounded-xl border border-amber-200">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold text-gray-900">Macchiato</h3>
+                            <span class="badge-new text-white text-xs font-bold px-3 py-1 rounded">New</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Espresso marked with a dollop of foam. Strong yet balanced.</p>
+                        <p class="text-2xl font-bold text-amber-900">₹160</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cold Beverages -->
+            <div class="mb-20">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12 pb-4 border-b-4 border-blue-400">
+                    🧊 Cold Beverages
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="card-hover bg-gradient-to-br from-blue-50 to-white p-6 rounded-xl border border-blue-200">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold text-gray-900">Cold Brew</h3>
+                            <span class="badge-popular text-white text-xs font-bold px-3 py-1 rounded">Popular</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Smooth, refreshing, perfect for staying cool and focused.</p>
+                        <p class="text-2xl font-bold text-blue-900">₹150</p>
+                    </div>
+
+                    <div class="card-hover bg-gradient-to-br from-blue-50 to-white p-6 rounded-xl border border-blue-200">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Iced Latte</h3>
+                        <p class="text-gray-600 mb-4">Cold, creamy, smooth. The perfect pick-me-up for heat.</p>
+                        <p class="text-2xl font-bold text-blue-900">₹170</p>
+                    </div>
+
+                    <div class="card-hover bg-gradient-to-br from-blue-50 to-white p-6 rounded-xl border border-blue-200">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Iced Cappuccino</h3>
+                        <p class="text-gray-600 mb-4">Espresso, cold milk, ice, and the same quality you expect.</p>
+                        <p class="text-2xl font-bold text-blue-900">₹180</p>
+                    </div>
+
+                    <div class="card-hover bg-gradient-to-br from-blue-50 to-white p-6 rounded-xl border border-blue-200">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Iced Americano</h3>
+                        <p class="text-gray-600 mb-4">Summer favorite. Strong, clean, refreshing.</p>
+                        <p class="text-2xl font-bold text-blue-900">₹140</p>
+                    </div>
+
+                    <div class="card-hover bg-gradient-to-br from-blue-50 to-white p-6 rounded-xl border border-blue-200">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold text-gray-900">Caramel Iced Latte</h3>
+                            <span class="badge-new text-white text-xs font-bold px-3 py-1 rounded">New</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Sweet caramel, cold milk, perfect balance of flavors.</p>
+                        <p class="text-2xl font-bold text-blue-900">₹210</p>
+                    </div>
+
+                    <div class="card-hover bg-gradient-to-br from-blue-50 to-white p-6 rounded-xl border border-blue-200">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Chocolate Iced Shake</h3>
+                        <p class="text-gray-600 mb-4">Smooth chocolate goodness. Not coffee, but absolutely delicious.</p>
+                        <p class="text-2xl font-bold text-blue-900">₹160</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Bites -->
+            <div class="mb-20">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12 pb-4 border-b-4 border-orange-400">
+                    🍪 Quick Bites
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="card-hover bg-gradient-to-br from-orange-50 to-white p-6 rounded-xl border border-orange-200">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Nutella Croissant</h3>
+                        <p class="text-gray-600 mb-4">Flaky, buttery, perfect with coffee or cold brew.</p>
+                        <p class="text-2xl font-bold text-orange-900">₹140</p>
+                    </div>
+
+                    <div class="card-hover bg-gradient-to-br from-orange-50 to-white p-6 rounded-xl border border-orange-200">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Classic Pastry</h3>
+                        <p class="text-gray-600 mb-4">Fresh, light, pairs well with almost anything we make.</p>
+                        <p class="text-2xl font-bold text-orange-900">₹120</p>
+                    </div>
+
+                    <div class="card-hover bg-gradient-to-br from-orange-50 to-white p-6 rounded-xl border border-orange-200">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold text-gray-900">Blueberry Muffin</h3>
+                            <span class="badge-popular text-white text-xs font-bold px-3 py-1 rounded">Popular</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Moist, fruity, made fresh. Study fuel that tastes good.</p>
+                        <p class="text-2xl font-bold text-orange-900">₹130</p>
+                    </div>
+
+                    <div class="card-hover bg-gradient-to-br from-orange-50 to-white p-6 rounded-xl border border-orange-200">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Garlic Bread</h3>
+                        <p class="text-gray-600 mb-4">Crispy, buttery, savory—when you need something more substantial.</p>
+                        <p class="text-2xl font-bold text-orange-900">₹180</p>
+                    </div>
+
+                    <div class="card-hover bg-gradient-to-br from-orange-50 to-white p-6 rounded-xl border border-orange-200">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Cheese Sandwich</h3>
+                        <p class="text-gray-600 mb-4">Simple, satisfying, exactly what you need during a work session.</p>
+                        <p class="text-2xl font-bold text-orange-900">₹160</p>
+                    </div>
+
+                    <div class="card-hover bg-gradient-to-br from-orange-50 to-white p-6 rounded-xl border border-orange-200">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold text-gray-900">Chocolate Chip Cookies</h3>
+                            <span class="badge-favorite text-white text-xs font-bold px-3 py-1 rounded">Favorite</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Warm, chewy, made fresh daily. Best with hot coffee.</p>
+                        <p class="text-2xl font-bold text-orange-900">₹100</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Student Combos -->
+            <div class="mb-20">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12 pb-4 border-b-4 border-purple-400">
+                    🎓 Student Combos (Save ₹40)
+                </h2>
+                <p class="text-lg text-gray-600 mb-8">
+                    Perfect for exam season. Coffee + bite + focus. Valid with student ID.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="card-hover bg-gradient-to-br from-purple-50 to-white p-6 rounded-xl border-2 border-purple-400">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900">Early Riser</h3>
+                                <p class="text-sm text-gray-600 mt-2">Cappuccino + Pastry</p>
+                            </div>
+                            <span class="bg-purple-500 text-white text-xs font-bold px-2 py-1 rounded">Save ₹40</span>
+                        </div>
+                        <p class="text-3xl font-bold text-purple-900">₹250</p>
+                        <p class="text-xs text-gray-500 mt-2">Regular: ₹290</p>
+                    </div>
+
+                    <div class="card-hover bg-gradient-to-br from-purple-50 to-white p-6 rounded-xl border-2 border-purple-400">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900">Study Session</h3>
+                                <p class="text-sm text-gray-600 mt-2">Cold Brew + Muffin</p>
+                            </div>
+                            <span class="bg-purple-500 text-white text-xs font-bold px-2 py-1 rounded">Save ₹40</span>
+                        </div>
+                        <p class="text-3xl font-bold text-purple-900">₹260</p>
+                        <p class="text-xs text-gray-500 mt-2">Regular: ₹300</p>
+                    </div>
+
+                    <div class="card-hover bg-gradient-to-br from-purple-50 to-white p-6 rounded-xl border-2 border-purple-400">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900">Exam Power</h3>
+                                <p class="text-sm text-gray-600 mt-2">Espresso + Sandwich</p>
+                            </div>
+                            <span class="bg-purple-500 text-white text-xs font-bold px-2 py-1 rounded">Save ₹40</span>
+                        </div>
+                        <p class="text-3xl font-bold text-purple-900">₹280</p>
+                        <p class="text-xs text-gray-500 mt-2">Regular: ₹320</p>
+                    </div>
+
+                    <div class="card-hover bg-gradient-to-br from-purple-50 to-white p-6 rounded-xl border-2 border-purple-400">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900">Cool Down</h3>
+                                <p class="text-sm text-gray-600 mt-2">Iced Latte + Cookie</p>
+                            </div>
+                            <span class="bg-purple-500 text-white text-xs font-bold px-2 py-1 rounded">Save ₹40</span>
+                        </div>
+                        <p class="text-3xl font-bold text-purple-900">₹240</p>
+                        <p class="text-xs text-gray-500 mt-2">Regular: ₹280</p>
+                    </div>
+
+                    <div class="card-hover bg-gradient-to-br from-purple-50 to-white p-6 rounded-xl border-2 border-purple-400">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900">Chill Evening</h3>
+                                <p class="text-sm text-gray-600 mt-2">Latte + Croissant</p>
+                            </div>
+                            <span class="bg-purple-500 text-white text-xs font-bold px-2 py-1 rounded">Save ₹40</span>
+                        </div>
+                        <p class="text-3xl font-bold text-purple-900">₹270</p>
+                        <p class="text-xs text-gray-500 mt-2">Regular: ₹310</p>
+                    </div>
+
+                    <div class="card-hover bg-gradient-to-br from-purple-50 to-white p-6 rounded-xl border-2 border-purple-400">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900">Group Study</h3>
+                                <p class="text-sm text-gray-600 mt-2">Any drink + Any bite</p>
+                            </div>
+                            <span class="bg-purple-500 text-white text-xs font-bold px-2 py-1 rounded">Save ₹40</span>
+                        </div>
+                        <p class="text-3xl font-bold text-purple-900">Mix & Match</p>
+                        <p class="text-xs text-gray-500 mt-2">Just show your ID</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work Longer Combos -->
+            <div class="mb-20">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12 pb-4 border-b-4 border-green-400">
+                    💼 Work-Longer Combos (2+ hours)
+                </h2>
+                <p class="text-lg text-gray-600 mb-8">
+                    Setup for deep work. Coffee + bites + space. Stay as long as you need.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="card-hover bg-gradient-to-br from-green-50 to-white p-8 rounded-xl border-2 border-green-500">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Freelancer's Day Pass</h3>
+                        <ul class="space-y-3 mb-6 text-gray-700">
+                            <li class="flex gap-2">
+                                <span class="text-green-600 font-bold">✓</span>
+                                <span>1 Large Coffee (any type)</span>
+                            </li>
+                            <li class="flex gap-2">
+                                <span class="text-green-600 font-bold">✓</span>
+                                <span>1 Bite item (sandwich, pastry, or bake)</span>
+                            </li>
+                            <li class="flex gap-2">
+                                <span class="text-green-600 font-bold">✓</span>
+                                <span>1 Refill (any cold drink)</span>
+                            </li>
+                            <li class="flex gap-2">
+                                <span class="text-green-600 font-bold">✓</span>
+                                <span>Fast WiFi + Charging spot</span>
+                            </li>
+                            <li class="flex gap-2">
+                                <span class="text-green-600 font-bold">✓</span>
+                                <span>Quiet corner work zone</span>
+                            </li>
+                        </ul>
+                        <p class="text-4xl font-bold text-green-900 mb-2">₹450</p>
+                        <p class="text-sm text-gray-600">Best deal if you're staying 3+ hours</p>
+                    </div>
+
+                    <div class="card-hover bg-gradient-to-br from-green-50 to-white p-8 rounded-xl border-2 border-green-500">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Project Marathon Pack</h3>
+                        <ul class="space-y-3 mb-6 text-gray-700">
+                            <li class="flex gap-2">
+                                <span class="text-green-600 font-bold">✓</span>
+                                <span>2 Large Coffees (mix & match)</span>
+                            </li>
+                            <li class="flex gap-2">
+                                <span class="text-green-600 font-bold">✓</span>
+                                <span>2 Bites (double the fuel)</span>
+                            </li>
+                            <li class="flex gap-2">
+                                <span class="text-green-600 font-bold">✓</span>
+                                <span>Unlimited cold water + ice</span>
+                            </li>
+                            <li class="flex gap-2">
+                                <span class="text-green-600 font-bold">✓</span>
+                                <span>Reserved table (yours for the day)</span>
+                            </li>
+                            <li class="flex gap-2">
+                                <span class="text-green-600 font-bold">✓</span>
+                                <span>+ 1 coffee refill at 3 PM</span>
+                            </li>
+                        </ul>
+                        <p class="text-4xl font-bold text-green-900 mb-2">₹750</p>
+                        <p class="text-sm text-gray-600">For when you're really in the zone</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Important Note -->
+            <div class="bg-amber-50 border-l-4 border-amber-900 p-6 rounded">
+                <p class="text-gray-800 font-semibold mb-2">📝 All Prices Include 18% GST</p>
+                <p class="text-gray-700">
+                    Combos are available during cafe hours. Refills are valid within 4 hours. Customizations available on request. Any allergies? Let us know when ordering.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-16 bg-amber-900 text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold mb-6">Ready to Order?</h2>
+            <p class="text-xl mb-8">
+                Come in and we'll make something perfect for your day.
+            </p>
+            <a href="contact.html" class="bg-white text-amber-900 px-8 py-4 rounded-lg font-600 text-lg inline-block hover:bg-gray-100 transition">
+                📍 Get Directions
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-white font-bold text-lg mb-4">☕ BrewNest</h3>
+                    <p class="text-sm text-gray-400">
+                        Your calm corner in Vijayawada. Specialty coffee, fast WiFi, peaceful space.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Explore</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="menu.html" class="hover:text-white transition">Menu</a></li>
+                        <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
+                        <li><a href="gallery.html" class="hover:text-white transition">Gallery</a></li>
+                        <li><a href="testimonials.html" class="hover:text-white transition">Reviews</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="contact.html" class="hover:text-white transition">Contact</a></li>
+                        <li><a href="#" class="hover:text-white transition">Visit Us</a></li>
+                        <li><a href="#" class="hover:text-white transition">Privacy</a></li>
+                        <li><a href="#" class="hover:text-white transition">Terms</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Connect</h4>
+                    <div class="space-y-2">
+                        <p class="text-sm">📍 Vijayawada, AP</p>
+                        <p class="text-sm">📧 hello@brewnest.local</p>
+                        <p class="text-sm">☎️ +91 XXXXXXXXXX</p>
+                        <div class="flex gap-3 mt-4">
+                            <a href="#" class="text-gray-400 hover:text-white transition">f</a>
+                            <a href="#" class="text-gray-400 hover:text-white transition">ig</a>
+                            <a href="#" class="text-gray-400 hover:text-white transition">in</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-sm text-gray-400">
+                <p>© 2025 BrewNest Cafe. All rights reserved. Made with ☕ and ❤️</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
